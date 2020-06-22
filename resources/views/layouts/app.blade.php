@@ -22,6 +22,8 @@
 </head>
 <body>
     <div id="app">
+
+
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -32,10 +34,14 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
 
                     </ul>
+
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -67,13 +73,27 @@
                             </li>
                         @endguest
                     </ul>
+
+
+
                 </div>
             </div>
+
+
+
         </nav>
+
+
+        <div class="container">
+            @include('flash::message')
+        </div>
 
         <main class="py-4">
             @yield('content')
         </main>
     </div>
+
 </body>
+<script src="//code.jquery.com/jquery.js"></script>
+
 </html>
